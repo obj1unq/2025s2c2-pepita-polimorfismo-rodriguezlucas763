@@ -56,3 +56,19 @@ object pepon {
 	}
 }
 
+object roque {
+	var ave = pepita
+	var vecesQueAlimentoASuAve = 0
+
+	method tieneA(_ave) {
+		ave = _ave
+		vecesQueAlimentoASuAve = 0
+	}
+	method alimentar(comida) {
+		ave.comer(comida)
+		vecesQueAlimentoASuAve = vecesQueAlimentoASuAve + 1
+	}
+	method cenas() {
+		return vecesQueAlimentoASuAve
+	}
+}
